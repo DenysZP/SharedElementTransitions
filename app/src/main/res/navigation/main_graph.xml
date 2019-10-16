@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/entryFragment">
+
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="org.rubygarage.sharedelementtransitions.EntryFragment"
+        android:label="EntryFragment">
+        <action
+            android:id="@+id/action_entryFragment_to_firstExampleFragment"
+            app:destination="@id/firstExampleFragment" />
+        <action
+            android:id="@+id/action_entryFragment_to_firstRecyclerExampleFragment"
+            app:destination="@id/firstRecyclerExampleFragment" />
+        <action
+            android:id="@+id/action_entryFragment_to_firstPagerExampleFragment"
+            app:destination="@id/firstPagerExampleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstExampleFragment"
+        android:name="org.rubygarage.sharedelementtransitions.simple.FirstExampleFragment"
+        android:label="FirstExampleFragment">
+        <action
+            android:id="@+id/action_firstExampleFragment_to_secondExampleFragment"
+            app:destination="@id/secondExampleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondExampleFragment"
+        android:name="org.rubygarage.sharedelementtransitions.simple.SecondExampleFragment"
+        android:label="SecondExampleFragment">
+        <argument
+            android:name="user"
+            app:argType="org.rubygarage.sharedelementtransitions.entity.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstRecyclerExampleFragment"
+        android:name="org.rubygarage.sharedelementtransitions.recycler.FirstRecyclerExampleFragment"
+        android:label="FirstRecyclerExampleFragment">
+        <action
+            android:id="@+id/action_firstRecyclerExampleFragment_to_secondRecyclerExampleFragment"
+            app:destination="@id/secondRecyclerExampleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondRecyclerExampleFragment"
+        android:name="org.rubygarage.sharedelementtransitions.recycler.SecondRecyclerExampleFragment"
+        android:label="SecondRecyclerExampleFragment">
+        <argument
+            android:name="user"
+            app:argType="org.rubygarage.sharedelementtransitions.entity.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstPagerExampleFragment"
+        android:name="org.rubygarage.sharedelementtransitions.pager.FirstPagerExampleFragment"
+        android:label="FirstPagerExampleFragment">
+        <action
+            android:id="@+id/action_firstPagerExampleFragment_to_secondPagerExampleFragment"
+            app:destination="@id/secondPagerExampleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondPagerExampleFragment"
+        android:name="org.rubygarage.sharedelementtransitions.pager.SecondPagerExampleFragment"
+        android:label="SecondPagerExampleFragment">
+        <argument
+            android:name="images"
+            app:argType="org.rubygarage.sharedelementtransitions.entity.Image[]" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+</navigation>
