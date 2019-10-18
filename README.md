@@ -3,7 +3,7 @@ This repository is an example of using Navigation component with shared elements
 
 ## Development setup
 
-First off, you require the latest Android Studio 3.5 (or newer) to be able to build the app.
+First, you require the latest Android Studio 3.5 (or newer) to be able to build the app.
 Then, with your Android Studio, you can import the project.
 
 ## Author
