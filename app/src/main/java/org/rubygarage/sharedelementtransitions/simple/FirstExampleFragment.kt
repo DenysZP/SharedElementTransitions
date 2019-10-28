@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
+import org.rubygarage.sharedelementtransitions.R
 import org.rubygarage.sharedelementtransitions.entity.User
 import org.rubygarage.sharedelementtransitions.databinding.FragmentFirstExampleBinding
 import org.rubygarage.sharedelementtransitions.extension.toTransitionGroup
@@ -26,11 +27,10 @@ class FirstExampleFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val user = User(
-            300,
-            "John Doe",
-            "https://i.pravatar.cc/150?img=1"
-        )
+
+        val details = resources.getStringArray(R.array.user_details_array)[1]
+        val user = User(300, "Jane Doe", details, "https://i.pravatar.cc/150?img=1")
+
         binding.user = user
         binding.clickListener = View.OnClickListener {
             val direction = FirstExampleFragmentDirections

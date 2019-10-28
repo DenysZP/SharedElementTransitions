@@ -3,6 +3,15 @@
     <string name="simple_example">Simple Example</string>
     <string name="recycler_view_example">Recycler View Example</string>
     <string name="view_pager_example">View Pager Example</string>
-    
-    <string name="stub_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string-array name="user_details_array">
+        <item>Elizabeth is a sales associate at a local high-end jewellery store. She prefers healthy lifestyle, going to the gym at least three times a week, and spending her free time outdoors.</item>
+        <item>Jane is a product manager from New York, who travels very often for business. For business trips, Jane prefers to rent apartments rather than stay in hotels. For her leisure travel, she usually stays in upper-end hotels for better comfort and travel experience. Jane is a savvy traveller and is hard to impress.</item>
+        <item>Ben is a toddler. He likes to play flash games on his mother\'s iPad. His parents allow him to play not more than 2 hours per day and the games mainly include logic games aimed at developing abstract mind.</item>
+        <item>John is a middle-aged fitness coach, a certified dietitian, and wellness expert. He goes to the gym at least five days per week and often works long hours training clients.</item>
+        <item>Michael goes to primary school. His favourite subjects include mathematics and English lessons. He\'s into fantasy computer games and he spends at least 2 hours a day playing.</item>
+        <item>Maria is a college student. She\'s an avid online shopper with a considerable online purchase history. She\'s looking for the best deals to purchase a certain item and rarely goes on a shopping spree.</item>
+        <item>Matt is a marketing manager at a small local agency. He\'s focused on his career goals and has a clear vision of what his career must look like in the next year.</item>
+    </string-array>
+
 </resources>

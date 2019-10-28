@@ -5,8 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import org.rubygarage.sharedelementtransitions.entity.User
+import org.rubygarage.sharedelementtransitions.R
 import org.rubygarage.sharedelementtransitions.databinding.FragmentFirstRecyclerExampleBinding
+import org.rubygarage.sharedelementtransitions.entity.User
 import org.rubygarage.sharedelementtransitions.extension.waitForTransition
 
 class FirstRecyclerExampleFragment : Fragment() {
@@ -31,11 +32,12 @@ class FirstRecyclerExampleFragment : Fragment() {
     }
 
     private fun getFakeUserList(): List<User> {
-        return (0..20).map {
+        return resources.getStringArray(R.array.user_details_array).mapIndexed { index, details ->
             User(
-                it,
-                "User $it",
-                "https://i.pravatar.cc/150?img=$it"
+                index,
+                "User $index",
+                details,
+                "https://i.pravatar.cc/150?img=$index"
             )
         }
     }
